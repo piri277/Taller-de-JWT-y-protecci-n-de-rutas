@@ -6,12 +6,14 @@ Proyecto completo de autenticación basada en JWT con Express, MongoDB y segurid
 ## 📋 Requisitos
 
 - Node.js v14+
-- MongoDB (local o Atlas)
 - npm o yarn
+- **Base de Datos**: Ya configurada en el archivo `.env` (MongoDB Atlas)
 
 ## 🚀 Instalación Rápida
 
-### 1. Dependencias (ya instaladas)
+Para poner en marcha el taller, simplemente sigue estos pasos:
+
+### 1. Instalar dependencias
 
 ```powershell
 npm install

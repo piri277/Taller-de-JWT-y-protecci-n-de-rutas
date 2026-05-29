@@ -42,6 +42,11 @@ router.post('/register', async (req, res) => {
       },
     });
   } catch (error) {
+    // Manejar errores de validación de Mongoose (ej: contraseña corta)
+    if (error.name === 'ValidationError') {
+      return res.status(400).json({ message: error.message });
+    }
+
     console.error('Error en registro:', error);
     res.status(500).json({ message: 'Error al registrar usuario.', error: error.message });
   }
